@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <AssemblyName>ArchiePaths.Clean.Abstrations</AssemblyName>
+    <PackageId>ArchiePaths.Clean.Abstrations</PackageId>
+    <Title>ArchiePaths.Clean.Abstrations</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Ben Bancroft (@archiepaths)</Authors>
+    <Company></Company>
+    <Description>Clean architecture abstractions</Description>
+    <Summary>A bunch of abstract stuff useful for creating clean architecture applications.</Summary>
+    <PackageProjectUrl>https://github.com/archiepaths/ArchiePaths.Clean.Abstractions</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/archiepaths/ArchiePaths.Clean.Abstractions</RepositoryUrl>
+    <PackageTags>Clean Architecture</PackageTags>
+    <PackageIcon></PackageIcon>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>
+    </PackageReleaseNotes>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <DocumentationFile>bin\$(Configuration)\ArchiePaths.Clean.Abstrations.xml</DocumentationFile>    
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ArchiePaths.Clean.Data" />
+    <PackageReference Include="Mediator.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <NoWarn>1701;1702;1591;1573;1712</NoWarn>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+</Project>
